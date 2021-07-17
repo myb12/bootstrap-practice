@@ -1,12 +1,13 @@
-main{
-    margin-top: 80px;
-}
+
 
 .button-search:hover{
     background-color: #afd275;
 }
 section{
     background-color:#e4ddf444;
+}
+.helper-div{
+    height: 90px;
 }
 
 .form-control:focus {
@@ -33,11 +34,17 @@ section{
 .icon-button:hover i{
     color: #000000;
 }
+
+
   
 
 /* Mobile view */
 @media only screen and (max-width:767px) {
     .author-image{
         margin-bottom: 2rem;
+    }
+
+    .offcanvas{
+        width: 50%;
     }
 }

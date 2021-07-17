@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top" >
         <nav class="navbar navbar-expand-lg navbar-light bg-secondary bg-gradient">
             <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#"><img src="images/myb-circle.svg" alt="" style="width: 3rem;" class="d-inline-block align-text-top"></a>
+                <a class="navbar-brand text-light" href="#"><img src="images/myb-circle.svg" alt="" style="width: 3rem;"
+                        class="d-inline-block align-text-top"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -26,11 +27,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
-                            <a class="nav-link active text-light" aria-current="page" href="#carousel-section">Home</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#flex-section">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Link</a>
+                            <a class="nav-link text-light" href="#carousel-section">Link</a>
                         </li>
 
                     </ul>
@@ -49,8 +50,8 @@
                 class="fas fa-angle-double-right fa-2x text-secondary" data-bs-toggle="tooltip"
                 data-bs-placement="right" title="Expand"></i></a>
 
-        <div class=" offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-start positin-absolute" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasExample" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">Lessons</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
@@ -62,27 +63,26 @@
                     images, lists, etc.
                 </div>
                 <div class="d-grid gap-2 mt-3">
-                    <a class="btn btn-outline-secondary" target="" href="#form-section"
-                        data-bs-dismiss="offcanvas">Forms</a>
-                    <a class="btn btn-outline-secondary" target="" href="#table-section"
-                        data-bs-dismiss="offcanvas">Tables</a>
-                    <a class="btn btn-outline-secondary" target="" href="#carousel-section"
-                        data-bs-dismiss="offcanvas">Carousel</a>
-                    <a class="btn btn-outline-secondary" target="" href="#card-section"
-                        data-bs-dismiss="offcanvas">Cards</a>
+                    <a class="btn btn-outline-secondary" target="" href="#flex-section">Flex</a>
+                    <a class="btn btn-outline-secondary" target="" href="#form-section">Forms</a>
+                    <a class="btn btn-outline-secondary" target="" href="#table-section">Tables</a>
+                    <a class="btn btn-outline-secondary" target="" href="#carousel-section">Carousel</a>
+                    <a class="btn btn-outline-secondary" target="" href="#card-section">Cards</a>
                 </div>
             </div>
         </div>
 
     </header>
 
-    <main>
-        <section class="container-sm shadow p-3 my-5 rounded" id="flex-section">
-            <div class="flex-wrapper d-flex flex-column flex-lg-row align-items-center justify-content-center px-3">
+    <main >
+        <div class="helper-div" id="flex-section"></div>
+        <section class="container-sm shadow p-3 rounded">
+            <div class="flex-wrapper d-flex flex-column flex-lg-row align-items-center justify-content-center px-3
+            ">
                 <div class="author-image align-self-end">
-                    <img style="width:100%; height: 300px;" src="images/author/1.png" alt="">
+                    <img width="300" src="images/pp.png" alt="">
                 </div>
-                <div class="author-info text-light flex-grow-1">
+                <div class="author-info text-light flex-grow-1 ms-2">
                     <h3>Hello World! I’m</h3>
                     <h1>Mohammad Yasin</h1>
                     <h4>Web Developer</h4>
@@ -111,20 +111,24 @@
                                 </div>
                                 <div class="modal-body d-flex flex-column">
                                     <div class="my-phone mb-2 d-flex align-items-center">
-                                        <span class="icon-button d-flex justify-content-center align-items-center"><i class="fas fa-phone-alt"></i></span>
+                                        <span class="icon-button d-flex justify-content-center align-items-center"><i
+                                                class="fas fa-phone-alt"></i></span>
                                         <span class="ms-2">01674687835</span>
                                     </div>
                                     <div class="my-email mb-2 d-flex align-items-center">
-                                        <span  class="icon-button d-flex justify-content-center align-items-center"><i class="fas fa-paper-plane"></i></span>
+                                        <span class="icon-button d-flex justify-content-center align-items-center"><i
+                                                class="fas fa-paper-plane"></i></span>
                                         <span class="ms-2 text-break">mohammadyasinbappy@outlook.com</span>
                                     </div>
                                     <div class="my-site mb-2 d-flex align-items-center">
-                                        <span  class="icon-button d-flex justify-content-center align-items-center"><i class="fas fa-globe"></i></span>
+                                        <span class="icon-button d-flex justify-content-center align-items-center"><i
+                                                class="fas fa-globe"></i></span>
                                         <span class="ms-2"><a class="text-decoration-none" target="_blank"
                                                 href="https://mohammad-yasin.netlify.app/">Mohammad Yasin</a></span>
                                     </div>
                                     <div class="my-home mb-2 d-flex align-items-center">
-                                        <span  class="icon-button d-flex justify-content-center align-items-center"><i class="fas fa-home"></i></span>
+                                        <span class="icon-button d-flex justify-content-center align-items-center"><i
+                                                class="fas fa-home"></i></span>
                                         <span class="ms-2">Chattogram, Bangladesh</span>
                                     </div>
                                 </div>
@@ -140,8 +144,8 @@
             </div>
         </section>
 
-
-        <section class="container-sm shadow  p-3 my-5 rounded" id="form-section">
+        <div class="helper-div" id="form-section"></div>
+        <section class="container-sm shadow  p-3 rounded">
             <h2>This is an example of a bootstrap form with floating label.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia possimus, fugit officia atque dolore
                 itaque odit cumque, ex ad non dolorem harum officiis quod nam eos distinctio excepturi! Doloremque
@@ -171,7 +175,8 @@
             </div>
         </section>
 
-        <section class="container-sm shadow  p-3 my-5 rounded" id="table-section">
+        <div class="helper-div" id="table-section"></div>
+        <section class="container-sm shadow  p-3 rounded">
             <h2>This is an example of a bootstrap table.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia possimus, fugit officia atque dolore
                 itaque odit cumque, ex ad non dolorem harum officiis quod nam eos distinctio excepturi! Doloremque
@@ -208,7 +213,8 @@
             </table>
         </section>
 
-        <section class="container-sm shadow  p-3 mb-5 rounded" id="carousel-section">
+        <div class="helper-div" id="carousel-section"></div>
+        <section class="container-sm shadow  p-3 rounded">
             <h2>This is an example of a bootstrap carousel.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia possimus, fugit officia atque dolore
                 itaque odit cumque, ex ad non dolorem harum officiis quod nam eos distinctio excepturi! Doloremque
@@ -250,7 +256,8 @@
             </div>
         </section>
 
-        <section class="container-sm shadow p-3 mb-5 rounded" id="card-section">
+        <div class="helper-div" id="card-section"></div>
+        <section class="container-sm shadow p-3 rounded">
             <h2>This is an example of a bootstrap cards.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia possimus, fugit officia atque dolore
                 itaque odit cumque, ex ad non dolorem harum officiis quod nam eos distinctio excepturi! Doloremque
