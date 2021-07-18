@@ -1,10 +1,10 @@
-
-
-.button-search:hover{
-    background-color: #afd275;
+.nav-item{
+    width: 120px;
+    display: flex;
+    justify-content: center;
 }
-section{
-    background-color:#e4ddf444;
+.nav-item:hover{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #85868b;
 }
 .helper-div{
     height: 90px;
@@ -22,8 +22,8 @@ section{
 .icon-button{
     background-color: transparent;
     color: white;
-    border-radius: 100%;
-    margin: 0 .2rem;
+    border-radius: 50%;
+    margin: .2rem;
     height: 35px;
     width: 35px;
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -34,10 +34,10 @@ section{
 .icon-button:hover i{
     color: #000000;
 }
-
-
-  
-
+.carousel-control-next,
+.carousel-control-prev , .carousel-indicators {
+    filter: invert(1);
+}
 /* Mobile view */
 @media only screen and (max-width:767px) {
     .author-image{
