@@ -1,5 +1,5 @@
 .nav-item{
-    width: 120px;
+    width: 70px;
     display: flex;
     justify-content: center;
 }
@@ -7,9 +7,59 @@
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #85868b;
 }
 .helper-div{
-    height: 90px;
+    height: 92px;
 }
 
+/* typewriting*/
+.type{
+    background-image: linear-gradient(-45deg, #101010 46%, #060606 49%, #060606 51%, #101010 55%); 
+}
+#typing {
+    width: 0;
+    color: #798188;
+    float: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 10s steps(50) 1s infinite alternate;
+}
+
+#typing span {
+    color: coral;
+}
+
+#crow {
+    float: left;
+    color: #798188;
+    font-family: consolas;
+    font-weight: bold;
+    font-size: 30px;
+    animation: crow 0.5s linear 0s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0em;
+    }
+
+    to {
+        width: 26em;
+    }
+}
+
+@keyframes crow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* input fields focus effect changing */
 .form-control:focus {
     border-color: #85868b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #85868b;
@@ -34,10 +84,28 @@
 .icon-button:hover i{
     color: #000000;
 }
+
+/* carousel button color changing */
 .carousel-control-next,
 .carousel-control-prev , .carousel-indicators {
     filter: invert(1);
 }
+
+/* card section */
+.card{
+    box-shadow: 0 12px 24px lightgray;
+    border-radius: 1.75rem;
+    transition: all .4s;
+}
+.card-img-top{
+    border-top-left-radius: 1.75rem;
+    border-top-right-radius: 1.75rem;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 24px lightgray;
+}
+
 /* Mobile view */
 @media only screen and (max-width:767px) {
     .author-image{
