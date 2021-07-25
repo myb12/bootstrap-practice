@@ -115,4 +115,8 @@
     .offcanvas{
         width: 50%;
     }
+
+    #typing, #crow{
+        font-size: 12px;
+    }
 }
